@@ -6,7 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { fetchDashboardData } from "@/lib/data";
 import { summaryCard } from "@/lib/definitions";
 
-import { formatCurrency } from "@/utils/formatCurrency";
+import { formatCurrency } from "@/lib/utils";
 
 import { DollarSign, Users2 } from "lucide-react";
 

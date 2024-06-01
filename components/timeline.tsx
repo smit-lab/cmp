@@ -1,4 +1,4 @@
-import { formatDate } from "@/utils/formatDate";
+import { formatDate } from "@/lib/utils";
 import AddStepDialog from "./add-step-dialog";
 import { Separator } from "./ui/separator";
 

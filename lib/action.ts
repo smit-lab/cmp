@@ -5,7 +5,7 @@ import User from "@/models/User";
 
 import { Status } from "./definitions";
 
-import dbConnect from "@/utils/dbConnect";
+import { dbConnect } from "@/lib/utils";
 
 import { revalidatePath } from "next/cache";
 
@@ -16,7 +16,7 @@ import {
   addProjectSchema,
   addStepSchema,
 } from "./zod-definitions";
-import { formateDateWithMilliseconds } from "@/utils/formatDate";
+import { formateDateWithMilliseconds } from "@/lib/utils";
 
 type projectInput = z.infer<typeof addProjectSchema>;
 type clientInput = z.infer<typeof addClientSchema>;

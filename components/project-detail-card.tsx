@@ -1,6 +1,5 @@
 import CopyText from "@/components/copy-text";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -12,20 +11,11 @@ import {
 
 import { Separator } from "./ui/separator";
 
-import {
-  CalendarCheck,
-  CalendarCheck2,
-  CreditCard,
-  Link2,
-  MoreVertical,
-  Truck,
-} from "lucide-react";
-import { Project, fetchProjectWithClient } from "@/lib/definitions";
-import { formatDate } from "@/utils/formatDate";
-import { formatCurrency } from "@/utils/formatCurrency";
-import SetStatus from "./set-status";
+import { fetchProjectWithClient } from "@/lib/definitions";
+import { cn, formatCurrency, formatDate } from "@/lib/utils";
+import { CalendarCheck2, Link2 } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+import SetStatus from "./set-status";
 
 const ProjectDetailCard = ({
   project_id,

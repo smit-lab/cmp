@@ -4,7 +4,6 @@ import * as React from "react";
 
 import {
   ColumnDef,
-  ColumnFiltersColumn,
   ColumnFiltersState,
   flexRender,
   getCoreRowModel,
@@ -13,6 +12,10 @@ import {
   useReactTable,
 } from "@tanstack/react-table";
 
+import { ChevronLeft, ChevronRight } from "lucide-react";
+import StatusFilter from "./status-filter";
+import { Button } from "./ui/button";
+import { Input } from "./ui/input";
 import {
   Table,
   TableBody,
@@ -21,11 +24,6 @@ import {
   TableHeader,
   TableRow,
 } from "./ui/table";
-import { Input } from "./ui/input";
-import AddClientDialog from "./add-client-dialog";
-import StatusFilter from "./status-filter";
-import { Button } from "./ui/button";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface DataTableProps<TData, TValue> {
   columns: ColumnDef<TData, TValue>[];

@@ -1,5 +1,5 @@
 import ProjectModel from "@/models/Project";
-import { formateDateWithMilliseconds } from "@/utils/formatDate";
+import { formateDateWithMilliseconds } from "@/lib/utils";
 import { createHmac, timingSafeEqual } from "crypto";
 import { unstable_noStore as noStore } from "next/cache";
 

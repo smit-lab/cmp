@@ -1,7 +1,6 @@
-import dbConnect from "@/utils/dbConnect";
-import UserModel from "@/models/User";
-import { NextResponse } from "next/server";
+import { dbConnect } from "@/lib/utils";
 import ProjectModel from "@/models/Project";
+import { NextResponse } from "next/server";
 
 const users = [
   {
